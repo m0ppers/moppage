@@ -1,0 +1,24 @@
+.content {
+    max-width: inherit;
+}
+
+.row {
+    display: flex;
+}
+
+.col-6-l {
+    margin-right: 20px;
+    flex: 1 1 0;
+}
+.col-6-r {
+    margin-left: 20px;
+    flex: 1 1 0;
+}
+
+.sidebar-about h1 {
+    font-size: 2.25rem;
+}
+
+.sidebar-nav-item:nth-child(5) {
+    margin-top: 20px;
+}
