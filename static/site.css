@@ -22,3 +22,10 @@
 .sidebar-nav-item:nth-child(5) {
     margin-top: 20px;
 }
+
+.tag {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
