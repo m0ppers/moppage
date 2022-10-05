@@ -67,7 +67,7 @@ Cloud init supports pulling keys from github directly. Unfortunately that didn't
 ## Starting the VM
 
 ```
-virt -install --name debian --memory 2048 --vcpus 4 --disk=size=10,backing_store=/var/lib/libvirt/images/debian-11-generic-amd64.qcow2 --cloud-init user-data=./cloud-init.yaml,disable=on --network bridge=virbr0 --osinfo=debian11
+virt-install --name debian --memory 2048 --vcpus 4 --disk=size=10,backing_store=/var/lib/libvirt/images/debian-11-generic-amd64.qcow2 --cloud-init user-data=./cloud-init.yaml,disable=on --network bridge=virbr0 --osinfo=debian11
 ```
 
 This starts a new VM and a console will come up showing the boot process and the IP that the VM is using in bridge mode. (or just issue a `ip neigh` on your host system). If you want to leave the console press `Ctrl+]` (there is also an `--noautoconsole` option for virt-install if you want it to boot in the background). You should now be able to login using the console and you should be able to ssh to the VM.
