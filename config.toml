@@ -19,7 +19,11 @@ taxonomies = [
   {name = "tags"}, # each tag will have its own RSS feed
 ]
 
-generate_rss = true
+generate_feed = true
+feed_filename = "rss.xml"
+
+[markdown]
+render_emoji = true
 
 [extra]
 # Put all your custom variables here
