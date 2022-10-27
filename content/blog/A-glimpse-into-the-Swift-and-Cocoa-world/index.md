@@ -2,14 +2,17 @@
 title = "A glimpse into the Swift and Cocoa world"
 date = 2014-12-30
 +++
+
 A few month ago i was searching for a tool to sync some files between all of my devices. As i don't really like being spied on i didn't go for a lazy solution (SkyDrive, iCloud et al) but searched a bit more and finally stumpled upon [syncthing](https://syncthing.net/) which i really liked right from the start:
 
-* open source
-* completely distributed (no centralized tracker like bittorrent sync)
-* small
-* easy to setup
-* written in Go (which i really like)
-* angular.js frontend
+<!-- more -->
+
+- open source
+- completely distributed (no centralized tracker like bittorrent sync)
+- small
+- easy to setup
+- written in Go (which i really like)
+- angular.js frontend
 
 While it works and is easy to setup it is not as easy to keep it running. In fact i set everything up and then i never started it because i had to manually do it or i would have to create cumbersome launchentries/autostart/upstart/systemd entries on all of my devices. While of course possible i was simply to lazy to ever do it. I always wanted a simple systray icon which keeps syncthing running in the background. For windows there are two tray solutions. Both are not ideal IMHO (configure here and configure there and they both have a strange UI) but do the job. For the Mac there was nothing at hand so i created my own solution using Swift and Cocoa. I had a bit of experience (did a VERY small app years ago) in Objective-C and iOS but this thing was new to me.
 

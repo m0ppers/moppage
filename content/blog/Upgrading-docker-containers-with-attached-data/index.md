@@ -6,9 +6,14 @@ tags = ["docker",
   "arangodb",
   "migration "]
 +++
-Being able to just kill a docker container and start up a fresh container with a new version of your application is nice but what if you have data attached to it? For example if you launch a database via docker? Or if your application has some userdata in its filesystem (for example images users uploaded) which need some kind of migration step before the new version can be run (for example generate a new thumbnail size) ?
 
-While this post might be a case of "stating the obvious" I was really surprised to not find plenty of material concerning this topic and especially nothing related to the major databases (which change their data format from time to time and need an upgrade).  
+Being able to just kill a docker container and start up a fresh container with a new version of your application is nice but what if you have data attached to it?
+
+<!-- more -->
+
+For example if you launch a database via docker? Or if your application has some userdata in its filesystem (for example images users uploaded) which need some kind of migration step before the new version can be run (for example generate a new thumbnail size) ?
+
+While this post might be a case of "stating the obvious" I was really surprised to not find plenty of material concerning this topic and especially nothing related to the major databases (which change their data format from time to time and need an upgrade).
 
 So here is how I would do it :) I will use [arangodb](http://www.arangodb.org) but this workflow should be valid for anything having some data attached to the container.
 

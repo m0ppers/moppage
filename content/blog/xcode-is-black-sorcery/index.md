@@ -7,7 +7,12 @@ tags = ["xcode",
   "syncthing-bar",
   "open source"]
 +++
-Wow. Just wow. I knew that maintaining an open source project is some work. While I am totally happy with my syncthing bar others drop in feature requests. I am currently focusing on different projects myself (maybe I find time later this year to fulfill the feature requests). However I already got 2 totally valid pull requests and this is a different matter and I try to merge them quickly.
+
+Wow. Just wow. I knew that maintaining an open source project is some work.
+
+<!-- more -->
+
+While I am totally happy with my syncthing bar others drop in feature requests. I am currently focusing on different projects myself (maybe I find time later this year to fulfill the feature requests). However I already got 2 totally valid pull requests and this is a different matter and I try to merge them quickly.
 
 AND THEN THERE IS XCODE: It is total black magic to me. It happened two times now without any obvious reason: https://forum.syncthing.net/t/syncthing-bar-for-os-x/1582/27.
 

@@ -6,7 +6,8 @@ tags = ["rust",
   "lifetimes",
   "wurst"]
 +++
-So somebody once said that you should not hesitate to post things you think would be n00bish but others might simply struggle with the same problems so it is helpful anyway. While I couldn't agree more it is still a step to really do it.
+
+So somebody once said that you should not hesitate to post things you think would be n00bish but others might simply struggle with the same problems so it is helpful anyway. While I couldn't agree more it is still a step to really do it.<!-- more -->
 
 Writing it down will hopefully also help me getting better at it.
 

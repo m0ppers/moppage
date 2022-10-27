@@ -9,7 +9,8 @@ tags = ["hardware",
   "demoscene",
   "presentation"]
 +++
-Somebody today asked me for the slides of `Wirklichkeitssteuerungsgeraet` which I held several months ago at the [DevHouseFriday](https://www.meetup.com/de-DE/DevHouseFriday-Chillout/) meetup.
+
+Somebody today asked me for the slides of `Wirklichkeitssteuerungsgeraet` which I held several months ago at the [DevHouseFriday](https://www.meetup.com/de-DE/DevHouseFriday-Chillout/) meetup.<!-- more -->
 Apparently I never crossposted this here and as a result it is not even googable. Also this is the super cheap solution of doing the first blog post of the year :D
 
 `Wirklichkeitssteuerungsgeraet` won the 1st prize (wild) at [Revision 2017](http://www.pouet.net/prod.php?which=69676).

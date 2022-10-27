@@ -9,7 +9,10 @@ tags = ["webos",
   "experiment",
   "cors"]
 +++
+
 Around 2009 or 2010 I got my first smartphone: A Palm Pre running webOS. An awesome OS and an awesome phone at the time. When it broke and I upgraded to a Galaxy S2 it really felt like a downgrade.
+
+<!-- more -->
 
 After all these years I am now back on webOS: I recently bought a LG TV running webOS.
 
@@ -52,7 +55,7 @@ To mitigate this there is the concept of services in webOS and I am quite sure t
 These services accompany a webOS application to do "backend" work. A service is looking like this:
 
 ```
-var Service = require('webos-service'); 
+var Service = require('webos-service');
 var service = new Service('koeln.mop.echo.service');
 
 service.register('ping', function(message) {
@@ -70,11 +73,11 @@ Services can then be called from the frontend via the a luna service request (al
 ```
 var request = webOS.service.request("luna://koeln.mop.echo.service/", {
     method:"ping",
-    onSuccess: function(inResponse) {  
+    onSuccess: function(inResponse) {
     },
-    onFailure: function(inError) {  
+    onFailure: function(inError) {
     },
-    onComplete: function(inResponse) {  
+    onComplete: function(inResponse) {
     },
 });
 ```
@@ -95,7 +98,7 @@ This is super frustrating. I googled for quite a while was browsing their docume
 
 Apart from the commands shown above there is another one:
 
-```ares-inspect -s koeln.mop.echo.service -o```
+`ares-inspect -s koeln.mop.echo.service -o`
 
 This will open a debugger in your standard browser. The problem here is unfortunately: My standard browser is firefox and the debugger is chrome only. So I was copy pasting the url to chrome (note that if you close the firefox window before opening it in chrome the debugger will be shut down - this was making me seriously mad after some time).
 

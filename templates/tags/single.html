@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block main_content %}
 
 Tag: {{ term.name }}
 {% for page in term.pages %}
@@ -9,4 +9,4 @@ Tag: {{ term.name }}
 </article>
 {% endfor %}
 
-{% endblock %}
+{% endblock main_content %}

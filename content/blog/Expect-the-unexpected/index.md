@@ -9,6 +9,7 @@ tags = ["xcode",
   "travis",
   "debugging"]
 +++
+
 Slowly this blog is turning into to a xcode rant blog. It happened again. I very seldom do any Mac development but when I do there is fail.
 
 When I started [syncthing-bar](https://github.com/m0ppers/syncthing-bar) and implemented its first (and only :D) unit test there wasn't any image for travis that supported xcode, swift etc. After a recent pull request I rechecked and I saw that much has happened since my last check and they now have proper images for xcode. While I still wonder why you still have to provide `objective-c` as [language](https://github.com/m0ppers/syncthing-bar/blob/master/.travis.yml#L1) to the .travis.yml everything seemed fine. And then the stack was failing me again:

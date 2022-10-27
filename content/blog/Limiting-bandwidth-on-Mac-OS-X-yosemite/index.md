@@ -7,11 +7,12 @@ tags = ["mac",
   "pf",
   "dummynet"]
 +++
-Using older Mac OS-X versions limiting bandwidth was as easy as
+
+Using older Mac OS-X versions limiting bandwidth was as easy as<!-- more -->
 
 ```bash
-ipfw pipe 1 config bw 30Kbytes/s  
-ipfw add 1 pipe 1 tcp from any to me  
+ipfw pipe 1 config bw 30Kbytes/s
+ipfw add 1 pipe 1 tcp from any to me
 ```
 
 This is really handy when you want to test if your applications work properly on slow networks.
@@ -25,21 +26,21 @@ Apple replaced "ipfw" with "pf" (OpenBSD's Packet Filter). However they are miss
 
 1. Create a custom anchor in pf
 
-    `(cat /etc/pf.conf && echo "dummynet-anchor \"mop\"" && echo "anchor \"mop\"") | sudo pfctl -f -`
+   `(cat /etc/pf.conf && echo "dummynet-anchor \"mop\"" && echo "anchor \"mop\"") | sudo pfctl -f -`
 
-    This will reload your standard pf configuration plus a custom anchor named "mop". We will place our custom rules there.
+   This will reload your standard pf configuration plus a custom anchor named "mop". We will place our custom rules there.
 
 2. Pipe the desired traffic to dummynet
 
-    `echo "dummynet in quick proto tcp from any to any port 8002 pipe 1" | sudo pfctl -a mop -f -`
+   `echo "dummynet in quick proto tcp from any to any port 8002 pipe 1" | sudo pfctl -a mop -f -`
 
-    This is MY rule (i needed to throttle all bandwidth on port 8002). Modify to your needs and consult pf documentation (yes - that is standard pf stuff apart from the dummynet :) )
+   This is MY rule (i needed to throttle all bandwidth on port 8002). Modify to your needs and consult pf documentation (yes - that is standard pf stuff apart from the dummynet :) )
 
 3. Throttle the pipe
 
-    `sudo dnctl pipe 1 config bw 1Mbit/s`
+   `sudo dnctl pipe 1 config bw 1Mbit/s`
 
-    Should be self explanatory :)
+   Should be self explanatory :)
 
 To reset:
 

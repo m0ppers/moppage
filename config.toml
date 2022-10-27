@@ -9,9 +9,9 @@ compile_sass = true
 highlight_code = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
-theme = "hyde"
+theme = "apollo"
 title = "mop.koeln"
 description = "Andreas Streichardt Softwareentwicklung"
 
@@ -26,13 +26,15 @@ feed_filename = "rss.xml"
 render_emoji = true
 
 [extra]
-# Put all your custom variables here
-hyde_links = [
-    {url = "/blog", name = "Blog"},
-    {url = "/contact", name = "Contact"},
-    {url = "/impressum", name = "Impressum (de)"},
-    {url = "/datenschutzerklaerung", name = "Datenschutzerklärung (de)"},
-    {url = "https://github.com/m0ppers", name = "Github"},
-    {url = "https://twitter.com/m0ppers", name = "Twitter"},
-    {url = "https://www.linkedin.com/in/andreas-streichardt-71a181aa/", name = "LinkedIn"},
+use_cdn = false
+socials = [
+    { name= "twitter", url= "https://twitter.com/m0ppers", icon= "twitter" },
+    { name= "github", url= "https://github.com/m0ppers", icon = "github" },
+    { name= "linkedin", url= "https://www.linkedin.com/in/andreas-streichardt-71a181aa/", icon = "linkedin" },
+]
+menu = [
+    { name= "Blog", url= "/blog/" },
+    { name= "Contact", url= "/contact"},
+    { name= "Impressum (de)", url= "/impressum" },
+    { name= "Datenschutzerklärung (de)", url= "/datenschutzerklaerung" },
 ]

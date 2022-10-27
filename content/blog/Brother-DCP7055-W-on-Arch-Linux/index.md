@@ -7,7 +7,10 @@ tags = ["Arch Linux",
   "Year of the linux desktop",
   "CUPS"]
 +++
+
 Finally managed to get my printer working on Arch Linux and I needed a 2019 blog post anyway.
+
+<!-- more -->
 
 ```
 sudo pacman -S cups avahi-daemon

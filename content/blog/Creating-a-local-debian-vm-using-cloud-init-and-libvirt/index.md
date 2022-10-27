@@ -14,6 +14,8 @@ No blog entry since 2019 :see_no_evil::see_no_evil::see_no_evil:
 
 So let me share something small yet hopefully helpful. Mostly I try to do everything in containers but now I am in a project that uses ansible to deploy software to machines so I thought it might be better to spin up a VM. As it is 2022 I thought I should do it without using VMWare, Virtualbox etc. Instead I wanted to work with `libvirt` and start a `cloud-init` capable image to not have to click through some installation process.
 
+<!-- more -->
+
 Unfortunately this is not as easy as one would think and took me quite a while to figure out. There are many references where this takes many steps. I hope this quick post gets you started faster.
 
 ## Prerequisites
@@ -34,7 +36,7 @@ Then make sure your user is in group `libvirt` so it is allowed to manage VMs.
 
 ## Download the image
 
-First of all download the appropriate *generic* for the image here: [https://cloud.debian.org/images/cloud/](https://cloud.debian.org/images/cloud/)
+First of all download the appropriate _generic_ for the image here: [https://cloud.debian.org/images/cloud/](https://cloud.debian.org/images/cloud/)
 
 In case you want bullseye on amd64 here is the direct link: [https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-amd64.qcow2](https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-amd64.qcow2)
 

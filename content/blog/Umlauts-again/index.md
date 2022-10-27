@@ -7,8 +7,11 @@ tags = ["year of the linux desktop",
   "linux",
   "sway"]
 +++
+
 Since December I am on Linux with my main machine again. I always wanted to do a rant post about the year
 of the linux desktop but instead I am posting something useful.
+
+<!-- more -->
 
 I am using US keyboards on my laptop and whenever I have to type some german umlauts I mostly just don't care.
 However for the rare cases when I care (writing serious german emails) I was super annoyed. I was mostly opening

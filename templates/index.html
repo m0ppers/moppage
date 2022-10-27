@@ -1,96 +1,53 @@
 {% extends "base.html" %}
 
-{% block content %}
-<main>
-    <h1 class="display-4">Andreas Streichardt Softwareentwicklung</h1>
-    <p class="lead">Software Engineer / Scrum Master / Generalist</p>
-    <div class="row">
-        <div class="col-6-l">
-            <h4>My background</h4>
-            <p>
-                I am a professional software developer since 20 years. In all these years I have
-                worked in numerous environments and roles: I have worked in agile environments and water
-                fall enterprise projects. I have led teams, worked as a Scrum Master, have been entitled
-                Software Architect. Yet my passion was and remains to do software development.
-            </p>
-            <p>
-                Most of the time I have worked in web related projects. I started out as a backend developer
-                and tried to strictly avoid (Frontend) Javascript. With the rise of "real" frontend
-                frameworks like Angular,
-                React et al that changed dramatically and I nowadays enjoy frontend development just as much
-                (given somebody
-                does the design).
-                In most of the projects I was also integral part of the deployment, continous integration
-                and release tooling.
-            </p>
-            <p>
-                Nowadays one would say I am a Full Stack Developer and a DevOps/Tooling guy.
-            </p>
-            <p>
-                From time to time I also do graphics programming and hardware stuff or obscure m68k
-                assembly.
-            </p>
-        </div>
-        <div class="col-6-r">
-            <h4>Here are some technologies/languages I feel reasonably proficient in</h4>
-            <ul>
-                <li>node.js</li>
-                <li>React</li>
-                <li>Kubernetes</li>
-                <li>Rust</li>
-                <li>Ansible</li>
-                <li>Javascript</li>
-                <li>ArangoDB</li>
-                <li>Symfony</li>
-                <li>Java</li>
-                <li>PHP</li>
-                <li>Jenkins</li>
-                <li>Gitlab</li>
-                <li>Angular (mostly 1)</li>
-                <li>C++</li>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-            </ul>
-        </div>
-    </div>
-</main>
+{% block main_content %}
+{{ post_macros::page_header(title="Andreas Streichardt Softwareentwicklung") }}
+<p class="lead">Software Engineer / Scrum Master / Generalist</p>
+<h2>My background</h2>
+<p>
+    I am a professional software developer since 20 years. In all these years I have
+    worked in numerous environments and roles: I have worked in agile environments and water
+    fall enterprise projects. I have led teams, worked as a Scrum Master, have been entitled
+    Software Architect. Yet my passion was and remains to do software development.
+</p>
+<p>
+    Most of the time I have worked in web related projects. I started out as a backend developer
+    and tried to strictly avoid (Frontend) Javascript. With the rise of "real" frontend
+    frameworks like Angular,
+    React et al that changed dramatically and I nowadays enjoy frontend development just as much
+    (given somebody
+    does the design).
+    In most of the projects I was also integral part of the deployment, continous integration
+    and release tooling.
+</p>
+<p>
+    Nowadays one would say I am a Full Stack Developer and a DevOps/Tooling guy.
+</p>
+<p>
+    From time to time I also do graphics programming and hardware stuff or obscure m68k
+    assembly.
+</p>
+<h2>Some of the technologies I am or have been using extensively</h2>
+<ul>
+    <li>node.js</li>
+    <li>React</li>
+    <li>Kubernetes</li>
+    <li>Rust</li>
+    <li>Python</li>
+    <li>Ansible</li>
+    <li>Javascript</li>
+    <li>ArangoDB</li>
+    <li>Symfony</li>
+    <li>Java</li>
+    <li>PHP</li>
+    <li>Jenkins</li>
+    <li>Gitlab</li>
+    <li>Vulkan</li>
+    <li>Angular (mostly 1)</li>
+    <li>C++</li>
+    <li>PostgreSQL</li>
+    <li>MySQL</li>
+</ul>
 
-{% endblock content %}
+{% endblock main_content %}
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand navbar-light mop-bg-light">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="https://mop.koeln/">mop.koeln</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <footer class="mop-bg-light">
-        <ul class="nav footer-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="https://mop.koeln/">mop.koeln</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="mailto:andreas@mop.koeln">Mail</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com/m0ppers">Twitter</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://github.com/m0ppers">Github</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/andreas-streichardt-71a181aa/">LinkedIn</a>
-            </li>
-        </ul>
-    </footer>
-</body>
-
-</html>

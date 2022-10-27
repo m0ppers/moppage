@@ -1,9 +1,6 @@
 +++
 title = "Contact"
-template = "simple.html"
 +++
-
-# Contact
 
 To get in touch please send a mail to:
 

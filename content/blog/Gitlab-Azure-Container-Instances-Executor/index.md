@@ -13,6 +13,8 @@ In the last weeks I finalized something that might be of interest to more than j
 
 **Gitlab ACI executor**
 
+<!-- more -->
+
 ## What does it do?
 
 Gitlab comes with a super powerful and easy to use CI and offers some shared runners by default which are not really fast but do their job. However if you are doing special stuff (I am doing some Vulkan graphics project) the standard shared runners might not be approriate. Luckily you can [start your own runners and integrate them into gitlab](https://docs.gitlab.com/runner/).

@@ -6,7 +6,10 @@ tags = ["rust",
   "arangodb",
   "javascript"]
 +++
+
 I had 2 mostly enjoyable years at ArangoDB working as a C++ developer but I finally decided to be my own boss again.
+
+<!-- more -->
 
 I am open for new interesting projects starting March 2018. So far I will try to stay local (Cologne area) but in case there is an interesting travel/remote opportunity - who knows :)
 

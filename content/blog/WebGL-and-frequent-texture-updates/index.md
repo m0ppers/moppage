@@ -9,7 +9,12 @@ tags = ["babylon.js",
   "webworker",
   "gamedev"]
 +++
-I am very close to releasing my first mobile game ever. Doing mobile imposes some interesting performance issues. My current computers all have decent hardware and I didn't have any problems developing a simple WebGL game on them. However the plan has always been to publish the game to mobile devices.
+
+I am very close to releasing my first mobile game ever. Doing mobile imposes some interesting performance issues.
+
+<!-- more -->
+
+My current computers all have decent hardware and I didn't have any problems developing a simple WebGL game on them. However the plan has always been to publish the game to mobile devices.
 
 During the game there will be VERY frequent texture changes. Analyzing the performance of the game it quickly became clear that I had to do something about the texture performance.
 
